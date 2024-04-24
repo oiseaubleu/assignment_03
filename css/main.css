@@ -1,0 +1,236 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_inner {
+  padding: 50px 10% 30px;
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("../images/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  /*タイトルとサブタイトルを上下中央に表示*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.key h1{
+  font-size: 2.5rem;
+}
+
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*文章は左側、画像は右側に来るようレイアウトすること*/
+.concept_inner{
+    display: flex;
+    justify-content: space-between;
+}
+/*文章は60%の幅、画像は35%の幅にすること*/
+.concept_inner p{
+    width: 60%;
+}
+.concept_inner img{
+    width:35%;
+}
+
+/*背景に、dic_cafe/imagesディレクトリ内のsample_menu_bg.jpgを表示させること
+スクロールしても固定するように表示させること*/
+.menu_inner{
+    background-image: url("../images/sample_menu_bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.caffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/*Recommended menu
+子要素　幅49% （画像はそのうち55%）*/
+.recommendedmenu_inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.rmenu_inner{
+    display: flex;
+    width: 49%;
+    height:300px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.menu_explanation{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding:5px;
+    justify-content:  space-between;
+    background-color: #fff;
+}
+
+.menu_explanation h2{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.3rem;
+   
+}
+.menu_explanation_price{
+    text-align:right
+}
+.menu_img{
+    width: 55%;
+    object-fit: cover;
+  
+}
+
+/*Coffee menu
+子要素　幅49% （画像はそのうち20%、説明文は80%）*/
+.coffeemenu_inner{
+    display: flex;
+    justify-content:  space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+    width:98%;
+}
+
+.cmenu_inner{
+    display: flex;
+    width: 49%;
+    padding:5px;
+    flex-direction: row-reverse;
+    justify-content:  space-between;
+    background-color: #fff;
+}
+
+.coffeemenu_explanation{
+    width: 80%;
+    margin-left: 10px;
+}
+.coffeemenu_explanation h2{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.3rem;
+}
+
+/*ACCESS
+<dt>要素と<dd>要素は横並びにすること
+<dt>要素80px 
+Mapは100% （heightは短くてもよい）
+*/
+.access_inner{
+    display: flex;
+}
+.access_info_name{
+    width: 80px;
+}
+.access_map{
+    width:100%;
+}
+
+/*footer
+背景の色は#251e19、文字の色は白を指定すること
+footerの高さは75pxとすること
+メニューリストとロゴマークが横並びになり、footerの左右中央に表示されていること
+コピーライトはfooterの左右中央に表示されていること
+*/
+.footer{
+background-color: #251e19;
+position: absolute;
+width: 100%;
+height: 75px;
+}
+
+.footer_nav{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.footer_img{
+    height:35px;
+}
+
+.footer_nav_innner{
+    display: flex; 
+    align-items: center;
+
+    color:#fff;
+    text-decoration: none;
+    padding:0px 20px;
+   
+}
+
+.footer_copyright{
+    color:#fff;
+    text-align: center;
+    font-size:0.8rem ;
+}
+
